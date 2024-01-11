@@ -3,9 +3,9 @@ from django.db import models
 from applications.products.models import PaletaInventory
 from applications.accounts.models import Client
 
-class Type(models.Model):
+# class Type(models.Model):
 
-    name = models.CharField(max_length=50)
+#     name = models.CharField(max_length=50)
 
 class Invoice(models.Model):
 
@@ -19,7 +19,7 @@ class Invoice(models.Model):
 
     quantity = models.IntegerField()
 
-    type = models.IntegerField() # invoice type
+    # type = models.IntegerField() # invoice type
 
     amount = models.IntegerField()
 
