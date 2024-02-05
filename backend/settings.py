@@ -36,7 +36,7 @@ def get_secret(secret_name, secrets=secret):
     try:
         return secrets[secret_name]
     except:
-        msg= "not found %s " % secret_name
+        msg= "not found name %s " % secret_name
         raise ImproperlyConfigured(msg)
 
 
