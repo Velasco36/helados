@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.urls import re_path, include
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('products/', include('applications.products.urls')),
+    # path('shop/', include('shop.urls')),
+    # path('dashboard/', include('dashboard.urls')),
+    # re_path(r'^api/v1/', include('api.urls')),
+
 ]
